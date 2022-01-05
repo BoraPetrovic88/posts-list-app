@@ -1,25 +1,3 @@
-// interface WithGreetMessageProps {
-//   message: string;
-// }
-
-// function withGreetMessage<T extends WithGreetMessageProps = WithGreetMessageProps>(
-//   WrappedComponent: React.ComponentType<T>
-// ) {
-//   const displayName = WrappedComponent.displayName || WrappedComponent.name || "Component";
-
-//   const ComponentWithTheme = (props: Omit<T, keyof WithGreetMessageProps>) => {
-//     const greetMessage = "Hello from";
-//     const fullMessage = `${greetMessage} - ${displayName}`;
-//     return <WrappedComponent {...(props as T)} message={fullMessage} />;
-//   };
-
-//   ComponentWithTheme.displayName = `withTheme(${displayName})`;
-
-//   return ComponentWithTheme;
-// }
-
-// export { withGreetMessage };
-// export type { WithGreetMessageProps };
 interface WithGreetMessageProps {
   message: string;
 }
