@@ -1,0 +1,14 @@
+@import "/src/style/mixins";
+.posts-list-container {
+  width: 44%;
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+  }
+  .posts-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+}

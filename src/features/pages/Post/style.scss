@@ -1,0 +1,29 @@
+@import "/src/style/mixins";
+
+.one-post-container {
+  width: 44%;
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+  }
+  .shell {
+    height: 100vh;
+  }
+  .post-wrapper {
+    cursor: default;
+    .post-wrapper {
+      width: 97%;
+      min-width: 450px;
+      @include media-breakpoint-down(sm) {
+        min-width: unset;
+      }
+    }
+  }
+
+  .back-link {
+    z-index: 3;
+    justify-content: flex-start;
+    color: $dodgerblue;
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
